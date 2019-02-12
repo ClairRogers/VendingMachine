@@ -13,15 +13,20 @@
 
 <body>
   <section class="container">
-    <section id="draw-vm" class="row text-center">
+    <section id="draw-vm" class="row text-center mt-5">
       <h1>draw here</h1>
     </section>
     <section class="row text-center mt-5">
       <div class="col-12">
         <h1>Balance: $<span id="bal">__</span></h1>
-        <button class="btn btn-info" onclick="app.controllers.vendrController.addMoney(.10)">Add Dime</button>
-        <button class="btn btn-info" onclick="app.controllers.vendrController.addMoney(.25)">Add Quarter</button>
-        <button class="btn btn-info" onclick="app.controllers.vendrController.addMoney(1)">Add Dollar</button>
+        <button class="btn btn-info" onclick="app.controllers.venderController.addMoney(.10)">Add Dime</button>
+        <button class="btn btn-info" onclick="app.controllers.venderController.addMoney(.25)">Add Quarter</button>
+        <button class="btn btn-info" onclick="app.controllers.venderController.addMoney(1)">Add Dollar</button>
+      </div>
+    </section>
+    <section class="row text-center mt-3">
+      <div class="col-12">
+        <h2 id="results"></h2>
       </div>
     </section>
   </section>
